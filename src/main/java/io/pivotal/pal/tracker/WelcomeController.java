@@ -13,10 +13,7 @@ public class WelcomeController {
 
     @Value("${welcome.message}")
     private String message;
-
-
     @GetMapping("/")
-
     public String sayHello() {
 
         return "hello";
